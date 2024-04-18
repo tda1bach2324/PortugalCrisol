@@ -1,0 +1,83 @@
+html, body{
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+}
+
+header{
+  background-color: #168ADD ;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px black;
+  padding: 3rem 2rem;
+}
+
+header h1{
+  text-align: center;
+  font-size: 4vw;
+}
+.cuerpo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.post{
+  width: 90%;
+  height: 35vh;
+  margin: 1vw;
+}
+
+section article{
+  background-color: #79C7C5;
+  transition: 0.3s ease;
+  margin: 2rem 0;
+  border-radius: 1vw;
+  padding: 0.5vw 0;
+}
+
+section article:hover{
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0,0,0,0.3);
+}
+h2{
+  font-size: 1.7vw;
+}
+p{
+  font-size: 0.8vw;
+}
+
+aside{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f3f3f3;
+}
+
+aside .imagen{
+  width: 50%;
+  height: 40%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ADE1E5;
+  padding: 3vw;
+  color: black;
+  margin: 0 auto;
+}
+
+footer a, footer p {
+  margin: 1vw;
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+  font-size: 1vw;
+}

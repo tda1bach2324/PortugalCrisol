@@ -1,0 +1,102 @@
+html, body{
+    font-family: "Montserrat";
+    margin: 0;
+    
+}
+#header{
+    background-color: #168ADD;
+    padding: 3rem 2rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow:8px 8px rgba(0, 0, 0, 0.705);
+}
+
+h2{
+    color: #012941;
+    text-align: center;
+}
+
+#fondo{
+    background-color:  #f3f3f3;
+
+}
+
+#contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section.izquierda{
+    width:60%;
+    float: left;
+    margin: 0;
+}
+.derecha{
+    /* background-color: red; */
+    padding: 2%;
+}
+
+.bacalaoart{
+    border-style: double;
+    border-radius: 10%;
+    border-color: #1e6091;
+    background-color: #ade1e5;
+}
+
+section{
+    width:60%;
+    float:left;
+}
+
+aside{
+    width: 40%;
+    float: right;
+}
+
+section aside img{
+    width: 300px;
+}
+
+.francesinha{
+    border-style: ridge;
+    border-radius: 20px;
+    border-color:#012941;
+    background-color: #93d4d5;
+
+}
+.pastel{
+    border-style: ridge;
+    border-radius: 20px;
+    border-color: #012941;
+    background-color: #93d4d5;
+}
+
+aside img{
+    border-style:ridge;
+    border-radius: 20px;
+    border-color: #012941;
+    background-color: #93d4d5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADE1E5;
+    padding: 4.5rem;
+    color: black;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+footer a, footer p {
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+    font-size: 1rem;
+}

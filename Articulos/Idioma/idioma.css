@@ -1,0 +1,147 @@
+*{
+    margin: 0.3vw;
+    padding: 0.2vw;
+    box-sizing: border-box;
+}
+.padre{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-flow: column nowrap;
+    }
+html{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+body{
+    padding: 0px;
+    margin:  0px;
+    background-color: #f3f3f3;
+    font-size: 100%;
+}
+header{
+    width: 100vw;
+    margin: 0;
+    background-image: url(FU8l.gif);
+    background-color: #168add;
+    color: white;
+    text-shadow: 0.5vw 0.5vw rgba(0, 0,0,0.705);
+    text-align: center;
+    font-size: 4vw ;
+}
+.section{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.articulos{
+    background: #f3f3f3;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.article{
+    display:flex;
+    border-radius: 1rem;
+    padding: 0.5rem ;
+    text-align: center;
+    width: 554.01px;
+    background: #93D4d5;
+    flex: 1 1 30%;
+    flex-flow: column;
+}
+
+.article-2{
+    display:flex;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: 554.01px;
+    background:#93D4d5 ;
+    flex: 1 1 100%;
+    flex-flow: column;
+}
+
+article:hover{
+    box-shadow: 0.1rem 0.1rem 0.5rem;
+}
+article h2, article p {
+    margin: 1rem;
+}
+article h2{
+    color: #012941;
+    font-size: 1.75vw;
+}
+.table{
+    margin: 0 auto;
+    /* border-collapse: collapse; */
+    width: 20vw;
+    font-size: 1vw;
+}
+.table-2{
+    margin: 0 auto;
+    /* border-collapse: collapse; */
+    width: 50vw;
+    font-size: 1vw;
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+    border: 0.2vw solid black;
+}
+th {
+    /* text-shadow: 5px 6px 8px; */
+    background-color: #79c7c5;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(odd){
+    background-color: powderblue;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADE1E5;
+    padding: 4.5rem;
+    color: black;
+    margin: 0;
+}
+
+footer a, footer p {
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+}
+@media screen and (min-width:1024px){
+    .section{
+        width: 100vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .padre{
+        display: flex;
+        align-items: center;
+    }
+    .section{
+        width: 80vw;
+    }
+    .articulos{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 50vw;
+    }
+    .article, .article-2{
+        width: 70vw;
+    }
+    .footer, .encabezado{
+        width: 80vw;
+    }
+
+}

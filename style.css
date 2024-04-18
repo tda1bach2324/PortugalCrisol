@@ -1,0 +1,342 @@
+body, html {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+}
+
+.seccion {
+    height: 100vh;
+    font-size: 2em;
+}
+
+/* header div #barra_sup{   Antiguo código  para la barra superior
+    display: flex;
+    justify-content: center;
+}
+
+header div #barra_sup ul{
+    display: grid;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-gap: 50px;
+}
+
+header div #barra_sup ul li:hover{
+    color: rgb(211, 211, 211);
+}
+
+header div nav#barra_sup ul li a{
+    font-size: 15px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+} */
+
+header div #barra_sup {
+    display: flex;
+    justify-content: center;
+}
+
+header div #barra_sup ul {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+header div #barra_sup ul li {
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header div #barra_sup ul li a:hover {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+header div #barra_sup ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header div #barra_sup ul li a#gastronomia{
+    padding-bottom: 10px;
+}
+
+header div #barra_sup ul li a#lugar{
+    padding-bottom: 10px;
+}
+
+header div #barra_sup ul li .content-menu {
+    display: none;
+    position: absolute;
+    background-color: #fcfcfc33;
+    margin-top: 10px;
+    border-radius: 10px;
+    grid-gap: 0px;
+    flex-wrap: wrap;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+header div #barra_sup ul li a#gastronomia:hover + #submenu1, /*Este selector es para que cuando estes por encima del "a" de id:"lugar" con el "+" se le aplique el "display:block" a "class:"content-menu" que es el menu desplegable*/
+header div #barra_sup ul li ul#submenu1:hover { /*Este selector es para que cuando estes por encima del menu se mantenga visible*/
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+header div #barra_sup ul li a#lugar:hover + #submenu2, /*Este selector es para que cuando estes por encima del "a" de id:"lugar" con el "+" se le aplique el "display:block" a "class:"content-menu" que es el menu desplegable*/
+header div #barra_sup ul li ul#submenu2:hover { /*Este selector es para que cuando estes por encima del menu se mantenga visible*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+}
+
+header div #barra_sup ul li .content-menu a {
+    color: rgb(255, 255, 255);
+    padding: 1vh 1vh;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+
+header div #barra_sup ul li .content-menu a:hover {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+div#inicio {
+    background-image: url(img/Puerta\ fondo.jpg);
+    background-image: url(img/Puente\ fondo.jpg);
+    background-image: url(img/luces.jpg);
+    background-image: url(img/Puente\ noche.jpg);
+    background-image: url(img/Cielo\ rosa.jpg);
+    background-image: url(img/Amanecer.jpg);
+    background-image: url(img/puente-noche-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+} 
+
+div.seccion h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    font-weight: 900;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.377);
+}
+
+div#seccion1 {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 100px;
+    padding: 100px;
+}
+
+div#seccion1 .articulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 1cm;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 30vh;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.103);
+}
+
+div#seccion1 .articulos:hover {
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+div#seccion1 .articulos#idioma {    /*Seccion idioma*/
+    background-image: url(img/secciones/Idioma.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#seccion1 .articulos#mapa {  /*Seccion mapa*/
+    background-image: url(img/secciones/Mapa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#seccion1 .articulos#divisa_hora {   /*Seccion Divisa_Hora*/
+    background-image: url(img/secciones/Divisa.jpeg);
+    background-size: cover;
+}
+
+div#seccion1 .articulos#tiempo {    /*Seccion Tiempo*/
+    background-image: url(img/secciones/Tiempo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+div#seccion1 a article h3{
+    background-color: rgba(0, 0, 0, 0.226);
+    color: white;
+    font-size: 4vh;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+div#seccion1 a{
+    color: tomato;
+    text-decoration: none;
+}
+
+/* div#seccion1 a:visited{
+    color: white;
+    text-decoration: none;
+} */
+
+footer{
+    background-color: #ADE1E5;
+    padding: 4.5rem;
+    color: black;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    header div #barra_sup ul {
+        display: grid;
+        list-style: none;
+        padding: 0;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        margin: 16px 0px;
+    }
+
+    header div #barra_sup ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 10px;
+        /* cursor: pointer; */
+    }
+
+    header div #barra_sup ul li a#lugar{
+        padding-bottom: 20px;
+    }
+
+    div.seccion h1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 30vh;
+        font-weight: 900;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        text-shadow: 1.2px 1.2px rgba(0, 0, 0, 0.377);
+        font-size: 32px;
+    }
+
+    div#inicio {
+        /* background-image: url(img/Puerta\ fondo.jpg); */
+        /* background-image: url(img/Puente\ fondo.jpg); */
+        /* background-image: url(img/luces.jpg); */
+        /* background-image: url(img/Puente\ noche.jpg); */
+        /* background-image: url(img/Cielo\ rosa.jpg); */
+        /* background-image: url(img/Amanecer.jpg); */
+        /* background-image: url(img/puente\ noche\ 2.jpg); */
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        margin: 0;
+    }
+
+    div#seccion1 a .articulos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        border-radius: 1cm;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        height: 30vh;
+        width: auto;
+    }
+
+    div#seccion1 {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px 40px;
+        padding: 100px;
+    }
+
+    div#seccion1 .articulos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        border-radius: 1cm;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        height: 30vh;
+        width: 20vh;
+    }
+
+    div#seccion1 .articulos h3{
+        font-size: 3vh;
+        color: rgb(255, 255, 255);
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    div.seccion h1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 32vh;
+        font-weight: 900;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        text-shadow: 1.2px 1.2px rgba(0, 0, 0, 0.377);
+        font-size: 60px;
+    }
+
+    div#seccion1 .articulos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        border-radius: 1cm;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        height: 30vh;
+        width: 100%;
+    }
+}

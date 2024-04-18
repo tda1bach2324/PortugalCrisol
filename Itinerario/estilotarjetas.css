@@ -1,0 +1,90 @@
+.tarjeta{
+  display:flex;
+  flex-direction:column;
+  width:420px;
+  border: 1px solid lightgray;
+  /* box-shadow: 2px 2px 8px 4px #d3d3d3d1; */
+  border-radius:15px;
+  text-align: center;
+  background-color: #93D4d5;
+}
+body, html {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  scrollbar-width: thin;
+background-color:#f3f3f3;
+}
+body{
+  background-color: #f3f3f3;
+  font-size: 100%;
+  margin: 0 auto;
+}
+.titulo{
+  font-size: 36px;
+  padding: 10px 10px 0 10px;;
+  color: #012941;
+
+}
+.cuerpo{
+  padding: 10px;
+}
+header{
+  background-color: #168add;
+  color: white;
+  text-shadow: 8px 8px rgba(0, 0,0,0.705);
+  text-align: center;
+  font-size: 4rem ;
+}
+#titulo_header{
+  padding: 60px;
+  margin: 0 auto;
+  background-color: #168add;
+  color: white;
+  text-shadow: 8px 8px rgba(0, 0,0,0.705);
+  text-align: center;
+  font-size: 4rem ;
+}
+/*.pie{
+  background: #6699ff;
+  border-radius:0 0 15px 15px;
+  padding: 10px;
+  text-align:center;
+}
+.pie a{
+  text-decoration: none;
+  color: white;
+}
+  .pie a:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: ""
+}*/
+.imagen1 {
+    width:90%;
+    height: 400px;
+    object-fit: cover;
+}
+.tarjetas{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #93d4d5;
+  padding: 4.5rem;
+  color: black;
+  margin: 0 auto;
+}
+
+footer a, footer p {
+  margin: 1rem;
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+}

@@ -1,0 +1,98 @@
+html{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+body{
+    margin:  0;
+    background-color: #f3f3f3;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background-color: #168add;
+    color: white;
+    text-shadow: 8px 8px rgba(0, 0,0,0.705);
+    font-size: 4rem ;
+}
+
+header .h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.cotainer_left{
+    width: 554.01px;
+    margin: 0 auto;
+    float: left;
+    padding-left: 30px;
+}
+.cotainer_right{
+        width: 554.01px;
+        margin: 0 auto;
+        float: right;
+        padding-right: 30px;
+}
+article{
+    background-color: #93D4d5;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.imagen_horario{
+    padding: 10px 0px 10px 0px;
+}
+article:hover{
+    box-shadow: 0.1rem 0.1rem 0.5rem;
+    /* acuerdate de poner un color al box */
+}
+ article h2, article p {
+    margin: 1rem;
+}
+article h2{
+    color: #012941;
+    font-size: 36px;
+}
+.horario_tametable{
+    text-align: left;
+}
+table{
+padding: 0px 10px;
+}
+th, td{
+    /* border:solid 2px aqua; */
+    padding: 5px 48px;
+    text-align: center;
+    border-style:solid ;
+    border-width: 2px;
+    border-color: black;
+    }
+th {
+    text-shadow: 5xp 6px 8px;
+    background-color: #79c7c5;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(odd){
+    background-color: powderblue;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADE1E5;
+    padding: 4.5rem;
+    color: black;
+    margin: 0 auto;
+    clear: both;
+}
+
+footer a, footer p {
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+}
